@@ -1,3 +1,6 @@
 <Solution>
   <Project Path="clean-architecture-demo-v1-api/clean-architecture-demo-v1-api.csproj" />
+  <Project Path="clean-architecture-demo-v1.App/clean-architecture-demo-v1.app.csproj" />
+  <Project Path="clean-architecture-demo-v1.Core/clean-architecture-demo-v1.core.csproj" />
+  <Project Path="clean-architecture-demo-v1.Framing/clean-architecture-demo-v1.framing.csproj" />
 </Solution>
