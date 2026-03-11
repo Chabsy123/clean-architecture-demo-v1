@@ -1,9 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using clean_architecture_demo_v1.Framing.Data;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace clean_architecture_demo_v1.Framing
 {
@@ -11,6 +8,12 @@ namespace clean_architecture_demo_v1.Framing
     {
         public static IServiceCollection AddFramingDI(this IServiceCollection services)
         {
+            services.AddDbContext<AppDbContext>(options =>
+            {
+                options.UseSqlServer("Server=.;Database=CleanV1APIDb;Trusted_Connection=True;TrustServerCertificate=true;MultipleActiveResultSets=true");
+            });
+
+            //services.AddScoped<IEmployeeRepository, EmployeeRepository>();
             return services;
         }
     }
