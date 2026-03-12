@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace clean_architecture_demo_v1.Core.Options
 {
-    internal class ConnectionStringOptions
+    public class ConnectionStringOptions
     {
+        public const string SectionName = "ConnectionStrings";
+        public string DefaultConnection { get; set; } = null!;
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using clean_architecture_demo_v1.Core.Options;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
